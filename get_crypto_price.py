@@ -58,7 +58,7 @@ class Window:
                 price = response.json()
                 self.price.set(f"{currency} {str(price[symbol]) } {symbol}")
                 self.wallet.set(
-                    f"{str(round((wallet_amount * price[symbol]) - 152.99, 2))} {symbol}"
+                    f"{str(round(wallet_amount * price[symbol]))} {symbol}"
                 )
 
     def quit(self, event):
